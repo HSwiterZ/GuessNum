@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Game_Introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"
+        android:gravity="center"
+        android:text="Click the 'GetNum' button to randomly generates an integer of 0 ~ 1000. Each time you enter an answer, the system will give a prompt according to the answer until it is correct."
+        android:textColor="#be0e0a"
+        android:textSize="28sp"
+        android:padding="12dp"/>
+    <Button
+        android:id="@+id/GetNum_Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="#d08080"
+        android:text="START"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/Answer_Input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="number"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:hint="Please enter the num you guess."
+        android:maxLines="1"/>
+    <Button
+        android:id="@+id/Confirm_Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="#d08080"
+        android:text="Confirm"
+        android:textSize="25sp"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/Result_Show"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="The result shows there."
+        android:textColor="#be0e0a"/>
+</LinearLayout>
